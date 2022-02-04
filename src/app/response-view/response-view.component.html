@@ -5,7 +5,7 @@
       <div class="first">
         <div class="text">
           <h2>{{ allQuestions[0].question }}</h2>
-          <ul displayCorrectQuestion()>
+          <ul>
             <li>{{ allQuestions[0].options[0].text }}</li>
             <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
               {{ allQuestions[0].options[1].text }}

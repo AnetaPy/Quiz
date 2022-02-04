@@ -14,13 +14,10 @@ export class ResponseViewComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllQuetsions();
-    // this.displayCorrectQuestion();
   }
   getAllQuetsions() {
     this.questionService.getQuestionsJson().subscribe((res) => {
       this.allQuestions = res;
-
-      console.log(this.allQuestions);
     });
   }
 

@@ -24,8 +24,6 @@ export class SummaryViewComponent implements OnInit {
   ngOnInit(): void {
     this.data.currentMessage.subscribe((msg) => (this.message = msg));
     this.answers = this.message.split(',');
-    console.log(this.message);
-    console.log(this.answers);
     this.correctAnswer = Number(this.answers[0]);
     this.incorrectAnswer = Number(this.answers[1]);
     this.allAnswer = Number(this.answers[2]);
@@ -35,11 +33,5 @@ export class SummaryViewComponent implements OnInit {
     this.userSelectionFour = this.answers[6];
     this.userSelectionFive = this.answers[7];
     this.visible = this.correctAnswer / this.allAnswer;
-
-    console.log(this.userSelectionOne);
-    console.log(this.userSelectionTwo);
-    console.log(this.userSelectionThree);
-    console.log(this.userSelectionFour);
-    console.log(this.userSelectionFive);
   }
 }
