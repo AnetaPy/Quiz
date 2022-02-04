@@ -1,0 +1,32 @@
+<div class="contentQuestions">
+  <div class="pre">
+    <h3>Szydełkowa quizilla</h3>
+    <h4>Witaj {{ name }} 👋</h4>
+    <p>Pytanie {{ currentQuestion + 1 }} z {{ allQuestions.length }}</p>
+  </div>
+  <div class="questions">
+    <h3>Pytanie nr {{ currentQuestion + 1 }}</h3>
+    <h4>{{ allQuestions[currentQuestion]?.question }}</h4>
+    <ul *ngFor="let option of allQuestions[currentQuestion]?.options">
+      <li
+        (click)="getAnswer(currentQuestion + 1, option)"
+        appChangeBg
+        [isCorrect]="option.correct"
+      >
+        {{ option.text }}
+      </li>
+    </ul>
+  </div>
+  <div class="buttons">
+    <button
+      [disabled]="currentQuestion === allQuestions.length - 1"
+      class="next"
+      (click)="nextQuestion()"
+    >
+      Następne pytanie
+    </button>
+    <button (click)="sendMessage()" class="summary" routerLink="/summary">
+      Podsumowanie
+    </button>
+  </div>
+</div>

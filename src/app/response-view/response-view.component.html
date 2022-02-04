@@ -1,0 +1,79 @@
+<div class="contentResponse">
+  <h1>Sprawdź poprawne odpowiedzi</h1>
+  <div class="questions">
+    <div class="partOne">
+      <div class="first">
+        <div class="text">
+          <h2>{{ allQuestions[0].question }}</h2>
+          <ul displayCorrectQuestion()>
+            <li>{{ allQuestions[0].options[0].text }}</li>
+            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+              {{ allQuestions[0].options[1].text }}
+            </li>
+            <li>{{ allQuestions[0].options[2].text }}</li>
+          </ul>
+        </div>
+        <img src="./../../assets/pic/mr.png" alt="" />
+      </div>
+      <div class="second">
+        <div class="text">
+          <h2>{{ allQuestions[1].question }}</h2>
+          <ul>
+            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+              {{ allQuestions[1].options[0].text }}
+            </li>
+            <li>{{ allQuestions[1].options[1].text }}</li>
+            <li>{{ allQuestions[1].options[2].text }}</li>
+          </ul>
+        </div>
+        <img src="./../../assets/pic/relief.png" alt="" />
+      </div>
+      <div class="third">
+        <div class="text">
+          <h2>{{ allQuestions[2].question }}</h2>
+          <ul>
+            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+              {{ allQuestions[2].options[0].text }}
+            </li>
+            <li>{{ allQuestions[2].options[1].text }}</li>
+            <li>{{ allQuestions[2].options[2].text }}</li>
+          </ul>
+        </div>
+        <img src="./../../assets/pic/haczyk.jpg" alt="" />
+      </div>
+    </div>
+    <div class="partTwo">
+      <div class="fourth">
+        <div class="text">
+          <h2>{{ allQuestions[3].question }}</h2>
+          <ul>
+            <li>{{ allQuestions[3].options[0].text }}</li>
+            <li>{{ allQuestions[3].options[1].text }}</li>
+            <li
+              [ngStyle]="{
+                color: 'green',
+                textDecoration: 'underline'
+              }"
+            >
+              {{ allQuestions[3].options[2].text }}
+            </li>
+          </ul>
+        </div>
+        <img src="./../../assets/pic/maskotka.jpeg" alt="" />
+      </div>
+      <div class="fifth">
+        <div class="text">
+          <h2>{{ allQuestions[4].question }}</h2>
+          <ul>
+            <li>{{ allQuestions[4].options[0].text }}</li>
+            <li>{{ allQuestions[4].options[1].text }}</li>
+            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+              {{ allQuestions[4].options[2].text }}
+            </li>
+          </ul>
+        </div>
+        <img src="./../../assets/pic/dywan.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
