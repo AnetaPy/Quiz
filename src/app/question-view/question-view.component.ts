@@ -60,5 +60,6 @@ export class QuestionViewComponent implements OnInit {
         ',' +
         this.userSelection
     );
+    console.log(this.userSelection);
   }
 }

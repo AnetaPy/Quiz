@@ -10,9 +10,9 @@ export class HeaderComponent implements OnInit {
   plPath: string;
   enPath: string;
   constructor() {
-    this.logoPath = '../../assets/pic/logo.png';
-    this.plPath = '../../assets/pic/pl.png';
-    this.enPath = '../../assets/pic/en.png';
+    this.logoPath = './../../assets/pic/logo.jpg';
+    this.plPath = './../../assets/pic/pl.png';
+    this.enPath = './../../assets/pic/en.png';
   }
 
   ngOnInit(): void {}
