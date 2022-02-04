@@ -1,0 +1,26 @@
+{
+  "home": {
+    "title": "Szydełkowa Quizilla",
+    "textOne": "Szydełkowanie jest dla babci?",
+    "textTwo": "Nonsens!",
+    "textThree": "Kliknij start i sprawdź czy wiesz jak to się plącze 🧶",
+    "textName": "Wpisz swoje imie",
+    "button": "Start",
+    "chooseLanguage": "Wybierz język",
+    "hello": "Witaj",
+    "question": "Pytanie",
+    "questionNo": "Pytanie numer",
+    "next": "Następne pytanie",
+    "summary": "Podsumowanie",
+    "congratulations": "Gratulacje! Ukończyłeś quiz!",
+    "result": "Oto twoje wyniki:",
+    "correct": "Poprawne odpowiedzi: ",
+    "incorrect": "Niepoprawne odpowiedzi: ",
+    "percent": "Wynik:",
+    "summaryTextOne": "Poćwicz, bo mozesz się poplątać.",
+    "summaryTextTwo": "Już prawie! Sukces jest bliski!",
+    "summaryTextThree": "Mistrz! Możesz plątać do woli!",
+    "seeResult": "Pokaż odpowiedzi",
+    "checkAnswer": "Sprawdź poprawne odpowiedzi"
+  }
+}
