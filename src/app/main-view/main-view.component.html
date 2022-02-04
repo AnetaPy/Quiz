@@ -1,13 +1,15 @@
 <div class="contentMain">
-  <h1>Szydełkowa quizilla</h1>
+  <h1>{{ "home.title" | translate }}</h1>
   <div class="text">
-    <p>Szydełkowanie jest dla babci?</p>
-    <p>Nonsens!</p>
-    <p>Kliknij start i sprawdź czy wiesz jak to się plącze 🧶</p>
+    <p>{{ "home.textOne" | translate }}</p>
+    <p>{{ "home.textTwo" | translate }}</p>
+    <p>{{ "home.textThree" | translate }}</p>
   </div>
   <div class="name">
-    <label for="">Wpisz swoje imie</label>
+    <label for="">{{ "home.textName" | translate }}</label>
     <input #name type="text" />
   </div>
-  <button routerLink="/question" (click)="startQuiz()">Start</button>
+  <button routerLink="/question" (click)="startQuiz()">
+    {{ "home.button" | translate }}
+  </button>
 </div>

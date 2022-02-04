@@ -1,6 +1,20 @@
 <div class="contentHeader">
   <img src="{{ logoPath }}" alt="logo Pyszki" routerLink="/main" class="logo" />
-  <button routerLink="/main" class="start">Start</button>
-  <img src="{{ plPath }}" alt="wersja polska" class="plVersion" />
-  <img src="{{ enPath }}" alt="wersja angielska" class="enVersion" />
+  <button routerLink="/main" class="start">
+    {{ "home.button" | translate }}
+  </button>
+  <div>
+    <label>
+      {{ "home.chooseLanguage" | translate }}
+      <select #langSelect (change)="translate.use(langSelect.value)">
+        <option
+          *ngFor="let lang of translate.getLangs()"
+          [value]="lang"
+          [selected]="lang === translate.currentLang"
+        >
+          {{ lang }}
+        </option>
+      </select>
+    </label>
+  </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   logoPath: string;
-  plPath: string;
-  enPath: string;
-  constructor() {
+  constructor(public translate: TranslateService) {
+    translate.addLangs(['pl', 'en']);
+    translate.setDefaultLang('pl');
     this.logoPath = './../../assets/pic/logo.jpg';
-    this.plPath = './../../assets/pic/pl.png';
-    this.enPath = './../../assets/pic/en.png';
   }
 
   ngOnInit(): void {}

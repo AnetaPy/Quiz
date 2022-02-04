@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-view',
@@ -6,8 +7,12 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./main-view.component.sass'],
 })
 export class MainViewComponent implements OnInit {
+  // param = { value: 'world' };
   @ViewChild('name') nameKey!: ElementRef;
-  constructor() {}
+  constructor(translate: TranslateService) {
+    translate.setDefaultLang('pl');
+    translate.use('pl');
+  }
 
   ngOnInit(): void {}
   startQuiz() {

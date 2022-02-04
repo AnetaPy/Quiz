@@ -1,27 +1,26 @@
 <div class="contentSummary" change="getScore()">
   <div class="text">
     <div class="summary">
-      <h2>Gratulacje! Ukończyłeś quiz!</h2>
-      <h3>Oto twoje wyniki:</h3>
-      <p>Poprawne odpowiedzi: {{ correctAnswer }}</p>
-      <p>Niepoprawne odpowiedzi: {{ incorrectAnswer }}</p>
-      <p>Wynik: {{ visible * 100 }}%</p>
+      <h2>{{ "home.congratulations" | translate }}</h2>
+      <h3>{{ "home.result" | translate }}</h3>
+      <p>{{ "home.correct" | translate }} {{ correctAnswer }}</p>
+      <p>{{ "home.incorrect" | translate }}{{ incorrectAnswer }}</p>
+      <p>{{ "home.percent" | translate }} {{ visible * 100 }}%</p>
     </div>
     <div class="percent">
       <div *ngIf="visible <= 0.5" class="to50Percent">
-        <p>Poćwicz, bo mozesz się poplątać.</p>
+        <p>{{ "home.summaryTextOne" | translate }}</p>
         <img src="./../../assets/pic/poplatane.jpg" alt="poplątane sznurki" />
       </div>
       <div *ngIf="visible > 0.5 && visible <= 0.8" class="to80Percent">
-        <p>Już prawie! Sukces jest bliski!</p>
+        <p>{{ "home.summaryTextTwo" | translate }}</p>
         <img src="./../../assets/pic/prawie.jpg" alt="owieczka w koszyku" />
       </div>
       <div *ngIf="visible > 0.8" class="to100Percent">
-        <p>Mistrz! Możesz plątać do woli!</p>
+        <p>{{ "home.summaryTextThree" | translate }}</p>
         <img src="./../../assets/pic/mistrz.jpg" alt="pszczółka" />
       </div>
     </div>
   </div>
-  <button routerLink="/response">Pokaż odpowiedzi</button>
+  <button routerLink="/response">{{ "home.seeResult" | translate }}</button>
 </div>
-<!-- {{ getScore() }} -->

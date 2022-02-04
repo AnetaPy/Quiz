@@ -32,10 +32,6 @@ export class ResponseViewComponent implements OnInit {
     this.userSelectionThree = this.answers[5];
     this.userSelectionFour = this.answers[6];
     this.userSelectionFive = this.answers[7];
-    console.log(this.message);
-
-    console.log(this.userSelectionFour);
-    console.log(this.userSelectionFive);
   }
   getAllQuetsions() {
     this.questionService.getQuestionsJson().subscribe((res) => {
