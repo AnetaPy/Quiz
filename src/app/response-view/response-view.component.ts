@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuestionsService } from '../service/questions.service';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-response-view',
@@ -7,23 +8,38 @@ import { QuestionsService } from '../service/questions.service';
   styleUrls: ['./response-view.component.sass'],
 })
 export class ResponseViewComponent implements OnInit {
+  message: string = '';
+  public answers: any = [];
   public allQuestions: any = [];
   public link: string = '';
+  public userSelectionOne: string = '';
+  public userSelectionTwo: string = '';
+  public userSelectionThree: string = '';
+  public userSelectionFour: string = '';
+  public userSelectionFive: string = '';
 
-  constructor(private questionService: QuestionsService) {}
+  constructor(
+    private questionService: QuestionsService,
+    private data: DataService
+  ) {}
 
   ngOnInit(): void {
     this.getAllQuetsions();
+    this.data.currentMessage.subscribe((msg) => (this.message = msg));
+    this.answers = this.message.split(',');
+    this.userSelectionOne = this.answers[3];
+    this.userSelectionTwo = this.answers[4];
+    this.userSelectionThree = this.answers[5];
+    this.userSelectionFour = this.answers[6];
+    this.userSelectionFive = this.answers[7];
+    console.log(this.message);
+
+    console.log(this.userSelectionFour);
+    console.log(this.userSelectionFive);
   }
   getAllQuetsions() {
     this.questionService.getQuestionsJson().subscribe((res) => {
       this.allQuestions = res;
     });
-  }
-
-  displayCorrectQuestion() {
-    if ((this.allQuestions.options.correct = true)) {
-      console.log('ok');
-    }
   }
 }

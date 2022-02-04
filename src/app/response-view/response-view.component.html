@@ -7,11 +7,18 @@
           <h2>{{ allQuestions[0].question }}</h2>
           <ul>
             <li>{{ allQuestions[0].options[0].text }}</li>
-            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+            <li
+              [ngStyle]="{
+                color: 'green',
+                textDecoration: 'underline',
+                textUnderlineOffset: '2px'
+              }"
+            >
               {{ allQuestions[0].options[1].text }}
             </li>
             <li>{{ allQuestions[0].options[2].text }}</li>
           </ul>
+          <p>👉 Twoja odpowiedź: {{ userSelectionOne }}</p>
         </div>
         <img src="./../../assets/pic/mr.jpg" alt="" />
       </div>
@@ -19,12 +26,19 @@
         <div class="text">
           <h2>{{ allQuestions[1].question }}</h2>
           <ul>
-            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+            <li
+              [ngStyle]="{
+                color: 'green',
+                textDecoration: 'underline',
+                textUnderlineOffset: '2px'
+              }"
+            >
               {{ allQuestions[1].options[0].text }}
             </li>
             <li>{{ allQuestions[1].options[1].text }}</li>
             <li>{{ allQuestions[1].options[2].text }}</li>
           </ul>
+          <p>👉 Twoja odpowiedź: {{ userSelectionTwo }}</p>
         </div>
         <img src="./../../assets/pic/relief.jpg" alt="" />
       </div>
@@ -32,12 +46,19 @@
         <div class="text">
           <h2>{{ allQuestions[2].question }}</h2>
           <ul>
-            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+            <li
+              [ngStyle]="{
+                color: 'green',
+                textDecoration: 'underline',
+                textUnderlineOffset: '2px'
+              }"
+            >
               {{ allQuestions[2].options[0].text }}
             </li>
             <li>{{ allQuestions[2].options[1].text }}</li>
             <li>{{ allQuestions[2].options[2].text }}</li>
           </ul>
+          <p>👉 Twoja odpowiedź: {{ userSelectionThree }}</p>
         </div>
         <img src="./../../assets/pic/haczyk.jpg" alt="" />
       </div>
@@ -52,12 +73,14 @@
             <li
               [ngStyle]="{
                 color: 'green',
-                textDecoration: 'underline'
+                textDecoration: 'underline',
+                textUnderlineOffset: '2px'
               }"
             >
               {{ allQuestions[3].options[2].text }}
             </li>
           </ul>
+          <p>👉 Twoja odpowiedź: {{ userSelectionFour }}</p>
         </div>
         <img src="./../../assets/pic/maskotka.jpeg" alt="" />
       </div>
@@ -67,10 +90,17 @@
           <ul>
             <li>{{ allQuestions[4].options[0].text }}</li>
             <li>{{ allQuestions[4].options[1].text }}</li>
-            <li [ngStyle]="{ color: 'green', textDecoration: 'underline' }">
+            <li
+              [ngStyle]="{
+                color: 'green',
+                textDecoration: 'underline',
+                textUnderlineOffset: '2px'
+              }"
+            >
               {{ allQuestions[4].options[2].text }}
             </li>
           </ul>
+          <p>👉 Twoja odpowiedź: {{ userSelectionFive }}</p>
         </div>
         <img src="./../../assets/pic/dywan.jpg" alt="" />
       </div>

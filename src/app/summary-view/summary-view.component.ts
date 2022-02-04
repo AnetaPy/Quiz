@@ -33,5 +33,7 @@ export class SummaryViewComponent implements OnInit {
     this.userSelectionFour = this.answers[6];
     this.userSelectionFive = this.answers[7];
     this.visible = this.correctAnswer / this.allAnswer;
+    console.log(this.userSelectionFour);
+    console.log(this.userSelectionFive);
   }
 }

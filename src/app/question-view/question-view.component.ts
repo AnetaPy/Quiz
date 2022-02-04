@@ -21,7 +21,7 @@ export class QuestionViewComponent implements OnInit {
     private data: DataService
   ) {}
 
-  message: string = '';
+  message: any = [];
 
   ngOnInit(): void {
     this.name = localStorage.getItem('name')!;
@@ -60,6 +60,6 @@ export class QuestionViewComponent implements OnInit {
         ',' +
         this.userSelection
     );
-    console.log(this.userSelection);
+    console.log(this.message);
   }
 }
