@@ -2,7 +2,7 @@
 
 Szydełkowa quizilla is a quiz aplication craeted in Angular.js
 
-[Check my demo here.](https://anetapy.github.io/Quiz/)
+[Check my demo here.](https://anetapy.github.io/Quiz/quiz/main)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
