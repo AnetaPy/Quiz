@@ -15034,7 +15034,7 @@
         }
       }
       function WO(e) {
-        return new GO(e);
+        return new GO(e, "./assets/", ".json");
       }
       let QO = (() => {
         class e {}
