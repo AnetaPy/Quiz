@@ -2,13 +2,11 @@
     margin: 0
     padding: 0
 .contentResponse
-    width: 1600px
-    height: 810px
+    width: 94vw
     max-width: 1920px
-    max-height: 1080px
     position: relative
     top: 100px
-    left: calc( 50% - 800px )
+    left: calc( 50% - 47vw )
     font-family: Arial, sans-serif
     color: #083d36
     background-color: #ebfffd
@@ -28,7 +26,7 @@
         flex-direction: row
         justify-content: space-around
         .partOne, .partTwo
-            width: 750px
+            width: 47%
             padding: 5px
             display: flex
             flex-direction: column
@@ -46,7 +44,7 @@
                     text-align: left
                     h2 
                         font-size: 20px
-                        padding: 0px 10px 10px 5px
+                        padding: 0px 10px 10px 0px
                         line-height: 30px
                     ul li 
                         padding: 10px
@@ -58,10 +56,118 @@
                         font-size: 16px
                         line-height: 25px
                 img
-                    padding-top: 20px
+                    padding-top: 100px
                     height: 180px
                     border-radius: 5px
             div.fourth img, div.fifth img
                 height: 280px
         .partTwo
+            padding-bottom: 20px
             justify-content: space-around
+
+@media ( max-width: 1024px ) 
+    .contentResponse
+        width: 90vw
+        max-width: 1920px
+        position: relative
+        top: 100px
+        left: calc( 50% - 45vw )
+        font-family: Arial, sans-serif
+        color: #083d36
+        background-color: #ebfffd
+        border: 2px solid #badad6
+        border-radius: 5px
+        text-align: center
+        h1 
+            padding: 20px 10px 20px
+            font-size: 22px
+            position: relative
+            text-decoration: underline
+            text-underline-offset: 5px
+            top: 3px
+            left: 0
+        .questions
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            .partOne, .partTwo
+                margin: 0 auto
+                width: 90%
+                padding: 5px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                div 
+                    padding: 10px
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-around
+                    .text 
+                        width: 470px
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-around
+                        text-align: left
+                        h2 
+                            font-size: 19px
+                            line-height: 30px
+                        ul li 
+                            padding: 10px
+                            padding-left: 5px
+                            // list-style: none
+                            font-size: 16px
+                        p 
+                            margin: 5px 0 0 -20px
+                            font-size: 15px
+                            line-height: 25px
+                    img
+                        padding-top: 20px
+                        height: 180px
+                        border-radius: 5px
+                div.fourth img, div.fifth img
+                    height: 280px
+            .partTwo
+                justify-content: space-around
+
+@media ( max-width: 425px ) 
+    .contentResponse
+        h1 
+            font-size: 20px
+        .questions
+            .partOne, .partTwo
+                width: 90%
+                div 
+                    flex-direction: column
+                    .text 
+                        width: 100%
+                        h2 
+                            font-size: 17px
+                            line-height: 27px
+                        ul li 
+                            padding: 5px
+                            font-size: 15px
+                            line-height: 25px
+                        p 
+                            font-size: 15px
+                    img
+                        display: block
+                        margin: 0 auto
+                        width: 50vw
+        
+@media ( max-width: 320px ) 
+    .contentResponse
+        h1 
+            padding: 20px 10px 10px 10px
+            font-size: 18px
+        .questions
+            .partOne, .partTwo
+                div 
+                    .text 
+                        h2 
+                            font-size: 16px
+                        ul li 
+                            font-size: 14px
+                        p 
+                            font-size: 14px
+                    img
+                        width: 60vw

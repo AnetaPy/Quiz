@@ -2,12 +2,8 @@
     margin: 0px
     padding: 0px
 .contentMain
-    margin: 0px
+    margin: 180px auto 0
     padding: 0px
-    position: absolute
-    top: 180px
-    left: calc( 50% - 500px )
-    width: 1000px
     height: 500px
     max-width: 1920px
     max-height: 1080px
@@ -43,14 +39,70 @@
             border: 3px dotted #62928c
             border-radius: 5px
     button
-        height: 70px
-        width: 150px
-        position: relative
-        top: 0px
-        left: calc( 50% - 150px/2)
+        margin: 0 auto
+        display: block
+        padding: 15px 25px
         font-size: 30px
         background-color: #bee5e0
         cursor: pointer
         border-radius: 7px
         color: #074430
         border: 1px dotted #083d36
+
+@media ( max-width: 768px ) 
+    .contentMain
+        height: 400px
+        h1
+            font-size: 35px
+        .text 
+            p
+                font-size: 25px
+        .name
+            label
+                padding: 10px
+                font-size: 25px
+            input
+                border: 1px dotted #62928c
+                font-size: 20px
+        button
+            font-size: 25px
+            padding: 12px 20px
+
+@media ( max-width: 425px ) 
+    .contentMain
+        margin: 150px auto 0
+        h1
+            font-size: 25px
+        .text 
+            p
+                font-size: 22px
+        .name
+            label
+                font-size: 22px
+            input
+                width: 300px
+                font-size: 19px
+        button
+            font-size: 20px
+            padding: 12px 20px
+
+@media ( max-width: 375px ) 
+    .contentMain
+        margin: 150px auto 0
+        h1
+            font-size: 22px
+        .text 
+            p
+                font-size: 20px
+        .name
+            label
+                font-size: 20px
+            input
+                width: 260px
+                font-size: 17px
+        button
+            font-size: 17px
+            padding: 8px 20px
+
+
+

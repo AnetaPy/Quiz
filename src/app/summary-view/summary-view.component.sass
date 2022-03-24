@@ -52,6 +52,8 @@
                     font-size: 25px
                     font-weight: bold
                 img 
+                    margin: 0 auto
+                    display: block
                     margin-top: 20px
                     width: 320px
                     border-radius: 7px
@@ -60,14 +62,99 @@
                     margin-top: 30px
                     width: 450px
     button
-            position: relative 
-            top: 0
-            left: calc( 50% - 90px )
-            height: 70px
-            width: 220px
-            font-size: 21px
-            background-color: #bee5e0
-            cursor: pointer
-            border-radius: 7px
-            color: #074430
-            border: 1px dotted #083d36
+        margin: 0 auto
+        display: block
+        padding: 15px 25px
+        font-size: 21px
+        background-color: #bee5e0
+        cursor: pointer
+        border-radius: 7px
+        color: #074430
+        border: 1px dotted #083d36
+
+@media ( max-width: 768px ) 
+    .contentSummary
+        width: 90vw
+        left: calc( 50% - 45vw )
+        .text
+            flex-direction: column
+            .summary
+                margin: 0 auto
+                top: 0px
+                height: 200px
+                h2 
+                    line-height: 35px
+                    padding: 10px
+                    font-size: 25px
+                h3 
+                    padding: 5px
+                    font-size: 20px
+                p 
+                    padding: 5px
+                    font-size: 18px
+            .percent
+                margin: 0 auto
+                div
+                    width: 550px
+                    p 
+                        line-height: 30px
+                        font-size: 20px
+                        font-weight: bold
+                    img 
+                        margin: 10px auto
+                        width: 200px
+                        border-radius: 7px
+                .to50Percent
+                    img
+                        width: 300px
+        button
+            padding: 12px 17px
+            font-size: 18px
+
+@media ( max-width: 425px ) 
+    .contentSummary
+        top: 100px
+        height: 85vh
+        .text
+            .summary
+                width: 90vw
+                h2 
+                    line-height: 30px
+                    font-size: 20px
+                h3 
+                    font-size: 18px
+                p 
+                    font-size: 17px
+            .percent
+                div
+                    width: 90vw
+                    p 
+                        line-height: 28px
+                        font-size: 18px
+        button
+            font-size: 17px
+
+@media ( max-width: 375px ) 
+    .contentSummary
+        top: 100px
+        height: 80vh
+        .text
+            .summary
+                width: 90vw
+                h2 
+                    font-size: 17px
+                h3 
+                    font-size: 16px
+                p 
+                    font-size: 15px
+            .percent
+                div
+                    p 
+                        font-size: 16px
+                    img
+                        width: 180px
+                .to50Percent
+                    img
+                        width: 265px
+        button
+            font-size: 15px
